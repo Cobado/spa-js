@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page App</title>
+    <link rel="stylesheet" href="/static/css/index.css">
   </head>
   <body>
-    <nav class="nav">
-      <a href="/" class="nav__link" data-link>Crm DashBoard</a>
-      <a href="/customers" class="nav__link" data-link>Customers</a>
-      <a href="/statistics" class="nav__link" data-link>Statistics</a>
+    <nav class="navbar">
+      <a class="navbar__brand">
+        <span class="name">Crm Dashboard</span>
+      </a>
+      <ul class="navbar__nav">
+        <li>
+          <a class="active"><span>Home</span></a>
+        </li>
+        <li>
+          <a><span>Customers</span></a>
+        </li>
+        <li>
+          <a><span>Statistics</span></a>
+        </li>
+      </ul>
     </nav>
+    <div id="app"></div>
     <script type="module" src="static/js/index.js"></script>
   </body>
 </html>
+
