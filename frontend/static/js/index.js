@@ -6,7 +6,11 @@ const navigateTo = (url) => {
 };
 
 const router = async () => {
-  const routes = [{ path: "/", view: Dashboard }];
+    const routes = [
+        { path: "/", view: Dashboard },
+        { path: "/customers", view: Customers },
+        { path: "/statistics", view: Statistics }
+    ];
 
   // Test each route for potential match
   const potentialMatches = routes.map((route) => {
